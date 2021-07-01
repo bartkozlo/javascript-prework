@@ -1,7 +1,7 @@
-let computerMove = 'kamień';
+let computerMove = 'stone';
 
-printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to papier, to wygrywasz!');
+printMessage('I play ' + computerMove + '! If yours move its paper, you win!');
 
-let playerMove = 'papier';
+let playerMove = 'paper';
 
-printMessage('Zagrałem ' + playerMove + '! Jeśli Twój ruch to nożyce, to wygrywasz!');
+printMessage('I play ' + playerMove + '! If yours move its scissors, you win!');
