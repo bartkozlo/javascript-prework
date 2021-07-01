@@ -1,7 +1,19 @@
-let computerMove = 'stone';
+let randomNumber = Math.floor(Math.random() * 3 + 1);
 
-printMessage('I play ' + computerMove + '! If yours move its paper, you win!');
+console.log('The drawn number is: ' + randomNumber);
 
-let playerMove = 'paper';
+let computerMove = 'unknown choose';
 
-printMessage('I play ' + playerMove + '! If yours move its scissors, you win!');
+if(randomNumber == 1){
+  computerMove = 'stone';
+}
+
+else if(randomNumber == 2){
+  computerMove = 'paper';
+}
+
+else if(randomNumber == 3){
+  computerMove = 'scissors';
+}
+
+printMessage('I choose: ' + computerMove);
