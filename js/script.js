@@ -2,6 +2,8 @@ let randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('The drawn number is: ' + randomNumber);
 
+let computerMove = 'unknown choose';
+
 if(randomNumber == 1){
   computerMove = 'stone';
 }
@@ -36,50 +38,50 @@ else if(playerInput == '3'){
 
 printMessage('Your choose: ' + playerMove);
 
-if( computerMove == 'stone' && playerMove == 'paper'){
+if(computerMove == 'stone' && playerMove == 'paper'){
   printMessage('You win!');
 }
 
-else if( computerMove == 'stone' && playerMove == 'stone'){
+else if(computerMove == 'stone' && playerMove == 'stone'){
   printMessage("It's a draw!");
 }
 
-else if( computerMove == 'stone' && playerMove == 'scissors'){
-  printMessage("You lose!");
+else if(computerMove == 'stone' && playerMove == 'scissors'){
+  printMessage('You lose!');
 }
 
-else if( computerMove == 'paper' && playerMove == 'stone'){
-  printMessage("You lose!");
+else if(computerMove == 'paper' && playerMove == 'stone'){
+  printMessage('You lose!');
 }
 
-else if( computerMove == 'paper' && playerMove == 'paper'){
+else if(computerMove == 'paper' && playerMove == 'paper'){
   printMessage("It's a draw!");
 }
 
-else if( computerMove == 'paper' && playerMove == 'scissors'){
-  printMessage("You win!");
+else if(computerMove == 'paper' && playerMove == 'scissors'){
+  printMessage('You win!');
 }
 
-else if( computerMove == 'scissors' && playerMove == 'stone'){
-  printMessage("You win!");
+else if(computerMove == 'scissors' && playerMove == 'stone'){
+  printMessage('You win!');
 }
 
-else if( computerMove == 'scissors' && playerMove == 'scissors'){
+else if(computerMove == 'scissors' && playerMove == 'scissors'){
   printMessage("It's a draw!");
 }
 
-else if( computerMove == 'scissors' && playerMove == 'paper'){
-  printMessage("You lose!");
+else if(computerMove == 'scissors' && playerMove == 'paper'){
+  printMessage('You lose!');
 }
 
-else if( computerMove == 'stone' && playerMove == 'unknown choose'){
-  printMessage("You have to pick number from 1 to 3!");
+else if(computerMove == 'stone' && playerMove == 'unknown choose'){
+  printMessage('You have to pick number from 1 to 3!');
 }
 
-else if( computerMove == 'paper' && playerMove == 'unknown choose'){
-  printMessage("You have to pick number from 1 to 3!");
+else if(computerMove == 'paper' && playerMove == 'unknown choose'){
+  printMessage('You have to pick number from 1 to 3!');
 }
 
-else if( computerMove == 'scissors' && playerMove == 'unknown choose'){
-  printMessage("You have to pick number from 1 to 3!");
+else if(computerMove == 'scissors' && playerMove == 'unknown choose'){
+  printMessage('You have to pick number from 1 to 3!');
 }
