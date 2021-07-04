@@ -1,0 +1,54 @@
+/* Variables */
+
+$color-light: #fff;
+
+* {
+  margin: 0;
+}
+
+body {
+  color: $color-light;
+}
+
+.container {
+  text-align: center;
+  max-width: 1140px;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url('/images/rules.png');
+  background-position: center center;
+  background-size: cover;
+  background-color: #b2bec3;
+}
+
+h1 {
+  font-family: 'Ruda', Sans-Serif;
+  font-size: 60px;
+  padding: 250px 0 20px;
+}
+
+#messages,
+p,
+button {
+  font-family: 'Roboto Slab', Serif;
+  font-size: 30px;
+}
+
+p {
+  padding: 0 20px 30px;
+}
+
+button {
+  padding: 10px 10px;
+  background-color: transparent;
+  color: $color-light;
+  border: 2px solid $color-light;
+  border-radius: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#messages {
+  padding-top: 25px;
+}

@@ -1,5 +1,4 @@
 function playGame(playerInput){
-
   clearMessages();
 
   function getMoveName(argMoveId){
@@ -9,8 +8,7 @@ function playGame(playerInput){
       return 'paper';
     } else if(argMoveId == 3){
       return 'scissors';
-    }
-    printMessage('Unknown move with id ' + argMoveId + '.');
+    } printMessage('Unknown move with id ' + argMoveId + '.');
     return 'unknown choose';
   }
 
