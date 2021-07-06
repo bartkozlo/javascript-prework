@@ -1,5 +1,5 @@
 function printMessage(msg){
-	const div = document.createElement('div');
+	let div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }

@@ -1,7 +1,7 @@
-{ function playGame(playerInput){
+{ const playGame = function(playerInput){
   clearMessages();
 
-  function getMoveName(argMoveId){
+  const getMoveName = function(argMoveId){
     if(argMoveId == 1){
       return 'stone';
     } else if(argMoveId == 2){
@@ -28,9 +28,7 @@
 
   printMessage('Your choose: ' + argPlayerMove);
 
-  displayResult(argComputerMove, argPlayerMove);
-
-  function displayResult(argComputerMove, argPlayerMove){
+  const displayResult = function(argComputerMove, argPlayerMove){
     if(argComputerMove == 'stone' && argPlayerMove == 'paper'){
       printMessage('You win!');
     } else if(argComputerMove == 'stone' && argPlayerMove == 'stone'){
@@ -57,6 +55,7 @@
       printMessage('You have to pick number from 1 to 3!');
     }
   }
+  displayResult(argComputerMove, argPlayerMove);
 }
 
 document.getElementById('play-stone').addEventListener('click', function(){
