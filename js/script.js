@@ -1,4 +1,4 @@
-function playGame(playerInput){
+{ function playGame(playerInput){
   clearMessages();
 
   function getMoveName(argMoveId){
@@ -14,17 +14,17 @@ function playGame(playerInput){
 
   playerMove = getMoveName(playerInput);
 
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
 
   console.log('The drawn number is: ' + randomNumber);
 
-  let argComputerMove = getMoveName(randomNumber);
+  const argComputerMove = getMoveName(randomNumber);
 
   printMessage('I choose: ' + argComputerMove);
 
   console.log('Player choose: ' + playerInput);
 
-  let argPlayerMove = getMoveName(playerInput);
+  const argPlayerMove = getMoveName(playerInput);
 
   printMessage('Your choose: ' + argPlayerMove);
 
@@ -69,7 +69,7 @@ document.getElementById('play-paper').addEventListener('click', function(){
 
 document.getElementById('play-scissors').addEventListener('click', function(){
   playGame('3');
-});
+}); }
 
 
 
